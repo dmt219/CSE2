@@ -8,18 +8,15 @@ public class Bowtie{
         Scanner myScanner = new Scanner(System.in);
         
         int nStars =9;
-        int a =0;
-        int b =0;
-        for(a=nStars; a>0; a--){
-            System.out.println("");
-            for(b=0;b<a;b--){
-                
+        for (int i = 0; i<= nStars/2; i++ ){
+            for (int j =0; j<= nStars; j++){
+                if (i<j && i+j<= nStars){
+                    System.out.print("*");
+                }else {
+                    System.out.print(" ");
+                }
+                } System.out.println("");
+                }
             }
-            System.out.print("*");
-            
-            
-         }
-        
-    }
-}
-  
+        }
+    
